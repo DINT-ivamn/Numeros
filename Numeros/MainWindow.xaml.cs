@@ -24,5 +24,13 @@ namespace Numeros
         {
             InitializeComponent();
         }
+
+        private void NumeroButtonClick(object sender, RoutedEventArgs e)
+        {
+            Button b = (Button)sender;
+            Viewbox vb = (Viewbox)b.Content;
+            TextBlock tb = (TextBlock)vb.Child;
+            NumerosTextBlock.Text += tb.Text;
+        }
     }
 }

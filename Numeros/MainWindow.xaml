@@ -5,30 +5,74 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:Numeros"
         mc:Ignorable="d"
-        Title="MainWindow" Height="400" Width="300" Icon="128.ico">
+        Title="Números" Height="400" Width="300" Icon="128.ico">
     <Grid>
         <Grid.RowDefinitions>
-            <RowDefinition></RowDefinition>
-            <RowDefinition></RowDefinition>
-            <RowDefinition></RowDefinition>
-            <RowDefinition></RowDefinition>
-            <RowDefinition></RowDefinition>
+            <RowDefinition Height="2*"></RowDefinition>
+            <RowDefinition Height="*"></RowDefinition>
+            <RowDefinition Height="*"></RowDefinition>
+            <RowDefinition Height="*"></RowDefinition>
+            <RowDefinition Height="50"></RowDefinition>
         </Grid.RowDefinitions>
         <Grid.ColumnDefinitions>
-            <ColumnDefinition></ColumnDefinition>
-            <ColumnDefinition></ColumnDefinition>
-            <ColumnDefinition></ColumnDefinition>
+            <ColumnDefinition Width="*"></ColumnDefinition>
+            <ColumnDefinition Width="*"></ColumnDefinition>
+            <ColumnDefinition Width="*"></ColumnDefinition>
         </Grid.ColumnDefinitions>
-
-        <TextBox IsReadOnly="True" Grid.Row="0" Grid.Column="0" Grid.ColumnSpan="3"></TextBox>
-        <Button Grid.Row="1" Grid.Column="0"></Button>
-        <Button Grid.Row="1" Grid.Column="1"></Button>
-        <Button Grid.Row="1" Grid.Column="2"></Button>
-        <Button Grid.Row="2" Grid.Column="0"></Button>
-        <Button Grid.Row="1" Grid.Column="0"></Button>
-        <Button Grid.Row="1" Grid.Column="0"></Button>
-        <Button Grid.Row="1" Grid.Column="0"></Button>
-        <Button Grid.Row="1" Grid.Column="0"></Button>
-        <Button Grid.Row="1" Grid.Column="0"></Button>
+        <Border Padding="5" Grid.Row="0" Grid.Column="0" Grid.ColumnSpan="3" BorderThickness="2" BorderBrush="Black">
+            <Viewbox HorizontalAlignment="Right">
+                <TextBlock x:Name="NumerosTextBlock"></TextBlock>
+            </Viewbox>
+        </Border>
+        <Button Grid.Row="1" Grid.Column="0" Click="NumeroButtonClick">
+            <Viewbox>
+                <TextBlock>1</TextBlock>
+            </Viewbox>
+        </Button>
+        <Button Grid.Row="1" Grid.Column="1" Click="NumeroButtonClick">
+            <Viewbox>
+                <TextBlock>2</TextBlock>
+            </Viewbox>
+        </Button>
+        <Button Grid.Row="1" Grid.Column="2" Click="NumeroButtonClick">
+            <Viewbox>
+                <TextBlock>3</TextBlock>
+            </Viewbox>
+        </Button>
+        <Button Grid.Row="2" Grid.Column="0" Click="NumeroButtonClick">
+            <Viewbox>
+                <TextBlock>4</TextBlock>
+            </Viewbox>
+        </Button>
+        <Button Grid.Row="2" Grid.Column="1" Click="NumeroButtonClick">
+            <Viewbox>
+                <TextBlock>5</TextBlock>
+            </Viewbox>
+        </Button>
+        <Button Grid.Row="2" Grid.Column="2" Click="NumeroButtonClick">
+            <Viewbox>
+                <TextBlock>6</TextBlock>
+            </Viewbox>
+        </Button>
+        <Button Grid.Row="3" Grid.Column="0" Click="NumeroButtonClick">
+            <Viewbox>
+                <TextBlock>7</TextBlock>
+            </Viewbox>
+        </Button>
+        <Button Grid.Row="3" Grid.Column="1" Click="NumeroButtonClick">
+            <Viewbox>
+                <TextBlock>8</TextBlock>
+            </Viewbox>
+        </Button>
+        <Button Grid.Row="3" Grid.Column="2" Click="NumeroButtonClick">
+            <Viewbox>
+                <TextBlock>9</TextBlock>
+            </Viewbox>
+        </Button>
+        <Button Grid.Row="4" Grid.Column="0" Grid.ColumnSpan="3" Margin="5" Click="NumeroButtonClick">
+            <Viewbox>
+                <TextBlock>0</TextBlock>
+            </Viewbox>
+        </Button>
     </Grid>
 </Window>
